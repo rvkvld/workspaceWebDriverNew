@@ -25,10 +25,11 @@ public class MyJunitTestWithAnatations {
  }
  
  @Test
- public void test() {
+ public void test() throws InterruptedException {
   driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
   driver.findElement(By.xpath("//input[@value='Bike']")).click();
   boolean str1 = driver.findElement(By.xpath("//input[@value='Bike']")).isSelected();
+  Thread.sleep(5000);
   if(str1 = true) {
    System.out.print("Checkbox is checked");
   }
