@@ -1,4 +1,4 @@
-package Testjunit;
+//package Testjunit;
 
 public class junit {
 
